@@ -17,12 +17,22 @@ return ( <div>
 ```
   <h2>Categories</h2>
 
-  <div className="category-grid">
+  <div>
 
-    <div className="card">
-      <img src={paintings} alt="Paintings" />
+    <div>
+      <img src={paintings} alt="Paintings"/>
       <p>Paintings</p>
     </div>
 
-    <div classN
+    <div>
+      <img src={customPaintings} alt="Custom Paintings"/>
+      <p>Custom Paintings</p>
+    </div>
+
+    <div>
+      <img src={bookmarks} alt="Bookmarks"/>
+      <p>Bookmarks</p>
+    </div>
+
+    <div>
 ```
