@@ -1,5 +1,5 @@
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import heroImage from 'figma:asset/69f555be4e627c818b6c203a89cf347cbec4a343.png';
+import heroImage from "../../assets/hero.png";
 
 export function HeroSection() {
   return (
