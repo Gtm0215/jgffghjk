@@ -1,84 +1,25 @@
-import {
-  paintings,
-  customPaintings,
-  bookmarks,
-  postcards,
-  customBulbDeco,
-  customWallCd,
-  oceanVinyl,
-  xmasPostcard,
-  animalCanvas,
-  giftHamper
-} from "../assets"
+import Header from "./components/Header"
+import HeroSection from "./components/HeroSection"
+import CategoryGrid from "./components/CategoryGrid"
+import FeaturedProducts from "./components/FeaturedProducts"
+import Footer from "./components/Footer"
 
 export default function App() {
-  return (
-    <div>
+return ( <div>
 
-      <h2>Categories</h2>
+```
+  <Header />
 
-      <div>
-        <div>
-          <img src={paintings} alt="Paintings" />
-          <p>Paintings</p>
-        </div>
+  <HeroSection />
 
-        <div>
-          <img src={customPaintings} alt="Custom Paintings" />
-          <p>Custom Paintings</p>
-        </div>
+  <CategoryGrid />
 
-        <div>
-          <img src={bookmarks} alt="Bookmarks" />
-          <p>Bookmarks</p>
-        </div>
+  <FeaturedProducts />
 
-        <div>
-          <img src={postcards} alt="Postcards" />
-          <p>Postcards</p>
-        </div>
-      </div>
+  <Footer />
 
-      <h2>Featured Products</h2>
+</div>
+```
 
-      <div>
-        <div>
-          <img src={customBulbDeco} alt="Custom Bulb Deco" />
-          <h3>Custom Bulb Deco</h3>
-          <p>₹299</p>
-        </div>
-
-        <div>
-          <img src={customWallCd} alt="Custom Wall CD Hanging" />
-          <h3>Custom Wall CD Hanging</h3>
-          <p>₹299</p>
-        </div>
-
-        <div>
-          <img src={oceanVinyl} alt="Ocean on Vinyl" />
-          <h3>Ocean on Vinyl</h3>
-          <p>₹499</p>
-        </div>
-
-        <div>
-          <img src={xmasPostcard} alt="Custom Xmas Postcard" />
-          <h3>Custom Xmas Postcard</h3>
-          <p>₹150</p>
-        </div>
-
-        <div>
-          <img src={animalCanvas} alt="Animal Canvas" />
-          <h3>Animal Canvas</h3>
-          <p>₹599</p>
-        </div>
-
-        <div>
-          <img src={giftHamper} alt="Mystery Craft Hamper" />
-          <h3>Mystery Craft Hamper</h3>
-          <p>₹1299</p>
-        </div>
-      </div>
-
-    </div>
-  )
+)
 }
