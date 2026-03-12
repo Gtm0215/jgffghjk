@@ -1,5 +1,5 @@
 import paintingsImage from "../../assets/69f555be4e627c818b6c203a89cf347cbec4a343.png";
-import customPaintingsImage from "../../assets/df041053efbb57c70472acd0af34aebcd976cfa.png";
+import customPaintingsImage from "../../assets/df041053efbb57c70472acd0af3f4aebcd976cfa".png
 import bookmarksImage from "../../assets/3c69aa21d9eca9167e2ce832f939d03132b55f1a.png";
 import postcardsImage from "../../assets/7e9f3fc442f4e433080d2bd71b724a01f633049b.png";
 
