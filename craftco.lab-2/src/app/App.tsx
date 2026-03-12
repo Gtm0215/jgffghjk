@@ -1,37 +1,90 @@
-import { Header } from './components/Header';
-import { AnnouncementBar } from './components/AnnouncementBar';
-import { HeroSection } from './components/HeroSection';
-import { CategoryGrid } from './components/CategoryGrid';
-import { FeaturedProducts } from './components/FeaturedProducts';
-import { ConnectSection } from './components/ConnectSection';
-import { FAQSection } from './components/FAQSection';
-import { Footer } from './components/Footer';
+import {
+paintings,
+customPaintings,
+bookmarks,
+postcards,
+customBulbDeco,
+customWallCd,
+oceanVinyl,
+xmasPostcard,
+animalCanvas,
+giftHamper
+} from "../assets"
 
 export default function App() {
-  return (
-    <div className="min-h-screen bg-[#fdfbfb] relative overflow-hidden">
-      {/* Grain texture overlay */}
-      <div className="fixed inset-0 pointer-events-none z-50 opacity-[0.03]" 
-           style={{
-             backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
-             backgroundRepeat: 'repeat',
-             backgroundSize: '200px 200px'
-           }}
-      />
-      
-      {/* Main content */}
-      <div className="relative z-10">
-        <AnnouncementBar />
-        <Header />
-        <main>
-          <HeroSection />
-          <CategoryGrid />
-          <FeaturedProducts />
-          <ConnectSection />
-          <FAQSection />
-        </main>
-        <Footer />
-      </div>
+return ( <div>
+
+```
+  <h2>Categories</h2>
+
+  <div className="category-grid">
+
+    <div className="card">
+      <img src={paintings} />
+      <p>Paintings</p>
     </div>
-  );
+
+    <div className="card">
+      <img src={customPaintings} />
+      <p>Custom Paintings</p>
+    </div>
+
+    <div className="card">
+      <img src={bookmarks} />
+      <p>Bookmarks</p>
+    </div>
+
+    <div className="card">
+      <img src={postcards} />
+      <p>Postcards</p>
+    </div>
+
+  </div>
+
+  <h2>Featured Products</h2>
+
+  <div className="products">
+
+    <div className="product">
+      <img src={customBulbDeco}/>
+      <h3>Custom Bulb Deco</h3>
+      <p>₹299</p>
+    </div>
+
+    <div className="product">
+      <img src={customWallCd}/>
+      <h3>Custom Wall CD Hanging</h3>
+      <p>₹299</p>
+    </div>
+
+    <div className="product">
+      <img src={oceanVinyl}/>
+      <h3>Ocean on Vinyl</h3>
+      <p>₹499</p>
+    </div>
+
+    <div className="product">
+      <img src={xmasPostcard}/>
+      <h3>Custom Xmas Postcard</h3>
+      <p>₹150</p>
+    </div>
+
+    <div className="product">
+      <img src={animalCanvas}/>
+      <h3>Animal Canvas</h3>
+      <p>₹599</p>
+    </div>
+
+    <div className="product">
+      <img src={giftHamper}/>
+      <h3>Mystery Craft Hamper</h3>
+      <p>₹1299</p>
+    </div>
+
+  </div>
+
+</div>
+```
+
+)
 }
